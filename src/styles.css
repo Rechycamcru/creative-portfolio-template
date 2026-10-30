@@ -5,8 +5,8 @@
 @custom-variant dark (&:is(.dark *));
 
 @theme inline {
-  --font-display: "Luckiest Guy", "Comic Sans MS", cursive;
-  --font-sans: "Nunito", system-ui, sans-serif;
+  --font-display: "Magical Night", "Luckiest Guy", cursive;
+  --font-sans: "Quicksand", system-ui, sans-serif;
   --radius-sm: calc(var(--radius) - 4px);
   --radius-md: calc(var(--radius) - 2px);
   --radius-lg: var(--radius);
@@ -106,3 +106,18 @@
 @utility animate-wiggle { animation: wiggle 2.5s ease-in-out infinite; }
 @utility animate-pulse-ring { animation: pulse-ring 1.6s ease-out infinite; }
 @utility animate-twinkle { animation: twinkle 3s ease-in-out infinite; }
+
+@font-face {
+  font-family: "Magical Night";
+  src: url("/fonts/magical-night.ttf") format("truetype");
+  font-display: swap;
+}
+
+@keyframes bounce-pulse {
+  0%, 100% { transform: translateY(0) scale(1) rotate(0); }
+  20% { transform: translateY(-10px) scale(1.06) rotate(-2deg); }
+  40% { transform: translateY(0) scale(0.97) rotate(1deg); }
+  55% { transform: translateY(-4px) scale(1.03); }
+  70% { transform: translateY(0) scale(1); }
+}
+@utility animate-bounce-pulse { animation: bounce-pulse 2.2s ease-in-out infinite; transform-origin: center bottom; }
