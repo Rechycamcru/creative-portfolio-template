@@ -70,8 +70,8 @@ function Index() {
         {/* PORTADA */}
         <section id="inicio">
           <Reveal className="h-14 w-40 sm:h-16 sm:w-56"><Png src={hero.logo} /></Reveal>
-          <Reveal delay={100} className="animate-floaty mx-auto mt-8 h-28 max-w-2xl sm:h-40">
-            <Png src={hero.banner} label="PNG personalizable (título)" />
+          <Reveal delay={100} className="animate-floaty mt-6 h-40 w-full sm:h-64">
+            <Png src={hero.banner} label="PNG personalizable (título)" className="object-cover" />
           </Reveal>
           <Divider />
           <Reveal className="space-y-4 text-center text-lg font-semibold sm:text-xl">
