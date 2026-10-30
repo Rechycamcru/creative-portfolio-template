@@ -140,9 +140,6 @@ function Index() {
               <Reveal key={i}>
                 <a href={it.link} target="_blank" rel="noreferrer" className="pop-card group relative block aspect-video overflow-hidden">
                   <Png src={it.image} label="PNG con enlace editable" className="rounded-none" />
-                  <span className="animate-wiggle absolute left-1/2 top-1/2 flex h-16 w-16 -translate-x-1/2 -translate-y-1/2 rotate-45 items-center justify-center border-[3px] border-foreground bg-secondary transition-transform group-hover:scale-125">
-                    <span className="h-5 w-5 border-[3px] border-foreground bg-accent" />
-                  </span>
                 </a>
               </Reveal>
             ))}
