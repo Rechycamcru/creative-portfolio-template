@@ -73,7 +73,7 @@ function Index() {
             <div className="absolute inset-0">
               <Png src={hero.banner} label="PNG personalizable (título)" className="rounded-none object-cover" />
             </div>
-            <Reveal className="relative z-10 ml-4 mt-8 h-14 w-40 sm:ml-10 sm:mt-12 sm:h-16 sm:w-56"><Png src={hero.logo} /></Reveal>
+            <Reveal className="relative z-10 ml-4 mt-8 h-14 w-40 sm:ml-10 sm:mt-12 sm:h-16 sm:w-56"><div className="animate-bounce-pulse h-full w-full"><Png src={hero.logo} /></div></Reveal>
           </div>
           <Divider />
           <Reveal className="space-y-4 text-center text-lg font-semibold sm:text-xl">
