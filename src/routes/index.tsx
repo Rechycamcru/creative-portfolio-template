@@ -69,10 +69,12 @@ function Index() {
       <main className="relative mx-auto min-h-screen max-w-5xl bg-background px-4 py-8 shadow-2xl sm:px-10 sm:py-12 lg:border-x-4 lg:border-foreground">
         {/* PORTADA */}
         <section id="inicio">
-          <Reveal className="h-14 w-40 sm:h-16 sm:w-56"><Png src={hero.logo} /></Reveal>
-          <Reveal delay={100} className="animate-floaty mt-6 h-40 w-full sm:h-64">
-            <Png src={hero.banner} label="PNG personalizable (título)" className="object-cover" />
-          </Reveal>
+          <div className="relative -mx-4 -mt-8 h-72 overflow-hidden sm:-mx-10 sm:-mt-12 sm:h-[28rem]">
+            <div className="absolute inset-0">
+              <Png src={hero.banner} label="PNG personalizable (título)" className="rounded-none object-cover" />
+            </div>
+            <Reveal className="relative z-10 ml-4 mt-8 h-14 w-40 sm:ml-10 sm:mt-12 sm:h-16 sm:w-56"><Png src={hero.logo} /></Reveal>
+          </div>
           <Divider />
           <Reveal className="space-y-4 text-center text-lg font-semibold sm:text-xl">
             {hero.texts.map((t, i) => <p key={i}>{t}</p>)}
